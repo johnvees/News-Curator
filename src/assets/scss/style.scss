@@ -57,9 +57,14 @@ header {
 
     .navbar-nav {
       li.nav-item {
+        &.active {
+            a.nav-link {
+                color: $primary
+            }
+        }
         a {
           &.nav-link {
-            color: $primary;
+            color: $gray-600;
             padding-left: 1rem;
             padding-right: 1rem;
             &:hover {

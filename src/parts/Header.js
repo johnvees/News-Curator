@@ -8,31 +8,31 @@ export default function Header(props) {
   };
 
   return (
-    <Header className="spacing-sm">
-      <div className="container">
+    <header className="spacing-sm">
+      <div className="container-fluid">
         <nav className="navbar navbar-expand-lg navbar-light">
           <ImgLogo />
+          <div className="collapse navbar-collapse">
+            <ul className="navbar-nav mr-auto">
+              <li className={`nav-item${getNavLinkClass('/')}`}>
+                <Button className="nav-link ml-5" type="link" href="/">
+                  Beranda
+                </Button>
+              </li>
+              <li className={`nav-item${getNavLinkClass('/pencarian')}`}>
+                <Button className="nav-link" type="link" href="/pencarian">
+                  Pencarian
+                </Button>
+              </li>
+              <li className={`nav-item${getNavLinkClass('/tentang')}`}>
+                <Button className="nav-link" type="link" href="/tentang">
+                  Tentang
+                </Button>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <div className="collapse navbar-collapse">
-          <ul className="navbar-nav ml-auto">
-            <li className={`nav-item${getNavLinkClass('/')}`}>
-              <Button className="nav-link" type="link" href="">
-                Beranda
-              </Button>
-            </li>
-            <li className={`nav-item${getNavLinkClass('/pencarian')}`}>
-              <Button className="nav-link" type="link" href="/pencarian">
-                Pencarian
-              </Button>
-            </li>
-            <li className={`nav-item${getNavLinkClass('/tentang')}`}>
-              <Button className="nav-link" type="link" href="/tentang">
-                Tentang
-              </Button>
-            </li>
-          </ul>
-        </div>
       </div>
-    </Header>
+    </header>
   );
 }
