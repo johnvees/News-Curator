@@ -1,12 +1,17 @@
 import React from 'react';
-import './assets/scss/style.scss';
-import Logo from './parts/Logo';
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 
-export default function App() {
+import './assets/scss/style.scss';
+import LandingPage from './pages/LandingPage';
+
+function App() {
   return (
-    <div>
-      <Logo />
-      aaa
+    <div className="App">
+      <Router>
+        <Route path="/" component={LandingPage}></Route>
+      </Router>
     </div>
   );
 }
+
+export default App;
