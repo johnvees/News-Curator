@@ -23,7 +23,7 @@ export default function Header(props) {
                 </Button>
               </li>
               <li className={`nav-item${getNavLinkClass('/pencarian')}`}>
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                <NavDropdown title="Pencarian" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">
                     Portal Berita
                   </NavDropdown.Item>
