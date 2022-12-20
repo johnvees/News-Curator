@@ -58,9 +58,9 @@ header {
     .navbar-nav {
       li.nav-item {
         &.active {
-            a.nav-link {
-                color: $primary
-            }
+          a.nav-link {
+            color: $primary;
+          }
         }
         a {
           &.nav-link {
@@ -69,6 +69,21 @@ header {
             padding-right: 1rem;
             &:hover {
               text-decoration: underline;
+              color: $primary;
+            }
+          }
+          &.btn {
+            &.btn-outline-primary {
+              color: $gray-600;
+              border-color: $gray-600;
+              &:hover {
+                background-color: $primary;
+                border-color: $primary;
+                color: $white;
+              }
+              &:focus {
+                box-shadow: none;
+              }
             }
           }
         }
